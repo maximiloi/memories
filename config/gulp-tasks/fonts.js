@@ -1,5 +1,5 @@
 import fs from 'fs';
-import del from "del";
+import { deleteAsync } from "del";
 
 export const otfToTtf = () => {
 	// Ищем файлы шрифтов .otf
@@ -90,7 +90,7 @@ export const fonstStyle = () => {
 			// fs.writeFile(`${app.path.srcFolder}/html/fonts.html`, '<link rel="stylesheet" href="css/fonts.min.css">', cb);
 		} else {
 			// Если шрифтов нет
-			del(fontsFile);
+			deleteAsync(fontsFile);
 		}
 	});
 	return app.gulp.src(`${app.path.srcFolder}`);

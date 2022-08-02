@@ -1,6 +1,6 @@
-import del from "del";
+import { deleteAsync } from "del";
 export const zip = () => {
-	del(`./${app.rootFolder}.zip`);
+	deleteAsync(`./${app.rootFolder}.zip`);
 	return app.gulp.src(`${app.path.buildFolder}/**/*.*`, {})
 		.pipe(app.lp.plumber(
 			app.lp.notify.onError({
