@@ -5,25 +5,63 @@
   }
   &__belka {
     margin-top: 50px;
-    transform: rotate(10deg);
+    margin-left: -0.5em;
+    animation: scalingBelka 10s ease infinite;
   }
   &__strelka {
     margin-top: -30px;
     margin-left: -40px;
-    transform: rotate(-10deg);
+    animation: scalingStrelka 15s linear infinite;
   }
   &__inner:first-child {
     display: flex;
+    justify-content: center;
   }
   &__inner:last-child {
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
   }
   &__title {
     font-family: "LemonTuesday";
-    font-size: 2.2em;
+    font-size: 2em;
   }
   &__tagline {
     margin-top: .8em;
+  }
+}
+
+@keyframes scalingBelka {
+  0% {
+    transform: scale(1) rotate(10deg) translate(1em, 0);
+  }
+  25% {
+    transform: scale(1.05) rotate(9deg) translate(.75em, .25em);
+  }
+  50% {
+    transform: scale(1) rotate(10deg) translate(1em, 0);
+  }
+  75% {
+    transform: scale(0.95) rotate(11deg) translate(1em, .25em);
+  }
+  100% {
+    transform: scale(1) rotate(10deg) translate(1em, 0);
+  }
+}
+
+@keyframes scalingStrelka {
+  0% {
+    transform: scale(1) rotate(-10deg) translate(0, 0);
+  }
+  25% {
+    transform: scale(0.95) rotate(-12deg) translate(0, .20em);
+  }
+  50% {
+    transform: scale(1) rotate(-10deg) translate(0.25em, .20em);
+  }
+  75% {
+    transform: scale(1.05) rotate(-9deg) translate(0.15em, .10em);
+  }
+  100% {
+    transform: scale(1) rotate(-10deg) translate(0, 0);
   }
 }

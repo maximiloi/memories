@@ -3,8 +3,12 @@
 //====================================================================================================
 .header {
 	color: #fff;
+	overflow: hidden;
 	&__container {
 		margin-top: 2em;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 	&__logo {
 		width: 205px;
