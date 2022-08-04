@@ -1,0 +1,46 @@
+.set {
+  &__picture {
+    margin-top: 5em;
+    position: relative;
+    & span {
+      font-size: 1.5em;
+      color: black;
+      position: relative;
+      &:nth-child(1) {
+        position: absolute;
+        top: 20%;
+        left: 12%;
+      }
+      &:nth-child(2) {
+        position: absolute;
+        top: 87%;
+        left: 20%;
+      }
+      &:nth-child(3) {
+        position: absolute;
+        top: 51%;
+        left: 87%;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -10px;
+        display: block;
+        width: 1.2em;
+        height: 1.2em;
+        border: 2px solid black;
+        border-radius: .6em;
+      }
+    } 
+  }
+  &__img {
+    width: 100%;
+  }
+  &__list {
+    margin-top: 2em;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 1em;
+  }
+}
