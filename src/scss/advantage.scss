@@ -29,3 +29,11 @@
     }
   }
 }
+
+@media (min-width:$pc){
+  .advantage {
+    &__list {
+      justify-content: center;
+    }
+  }
+}
