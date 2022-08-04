@@ -1,5 +1,80 @@
 .gallery {
-  font-size: 1.8em;
   text-align: center;
-  margin-top: 1.4em;
+  margin-top: 5em;
+  &__title {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 1em;
+  }
+  #lightgallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+  #lightgallery img {
+    height: 100px;
+    margin: 0px;
+  }
+  #lightgallery figure {
+    // float: left;
+    // position: relative;
+    background-color: white;
+    text-align: center;
+    font-size: .8em;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 1px 2px 3px black;
+  }
+    #lightgallery figcaption {
+      margin-top: 10px;
+    }
+  figure.pic1 {
+    transform: rotate(-10deg);
+    z-index: 1;
+  }
+  figure.pic2 {
+    transform: rotate(15deg);
+    z-index: 2;
+  }
+  figure.pic3 {
+    transform: rotate(-25deg);
+    z-index: 1;
+  }
+  figure.pic4 {
+    transform: rotate(5deg);
+    z-index: 1;
+  }
+  figure.pic5 {
+    transform: rotate(5deg);
+    z-index: 1;
+  }
+  figure.pic6 {
+    transform: rotate(-8deg);
+    z-index: 1;
+  }
+  figure.pic7 {
+    transform: rotate(2deg);
+    z-index: 1;
+  }
+  figure.pic8 {
+    transform: rotate(-13deg);
+    z-index: 1;
+  }
+  figure.pic9 {
+    transform: rotate(-7deg);
+    z-index: 1;
+  }
+  figure.pic10 {
+    transform: rotate(2deg);
+    z-index: 1;
+  }
+  figure.pic11 {
+    transform: rotate(-3deg);
+    z-index: 1;
+  }
+  #lightgallery figure:hover {
+    box-shadow: 5px 10px 100px black;
+    transform: scale(1.1, 1.1);
+    z-index: 20;
+  }
 }

@@ -1,0 +1,23 @@
+.whom {
+  text-align: center;
+  margin-top: 5em;
+  &__title {
+    font-size: 1.8em;
+    font-weight: 700;
+  }
+  &__list {
+    margin-top: 2em;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 1em;
+  }
+
+  @media (min-width:$pc){
+    .whom{
+      &__list {
+        display: flex;
+        justify-content: space-between;
+      }
+    } 
+  }
+}

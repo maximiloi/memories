@@ -1,0 +1,11 @@
+.step {
+  text-align: center;
+  margin-top: 5em;
+  &__title {
+  font-size: 1.8em;
+  font-weight: 700;
+  }
+  &__list {
+    margin-top: 2em;
+  }
+}
