@@ -9,3 +9,12 @@
     margin-top: 2em;
   }
 }
+
+@media (min-width:$pc) {
+  .step {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

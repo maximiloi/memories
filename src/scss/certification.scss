@@ -11,4 +11,18 @@
   & #lightgallery figure img {
     height: 150px;
   }
+  & #lightgallery figure:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (min-width:$pc) {
+  .certification {
+    & #lightgallery figure img {
+      height: 300px;
+    }
+    & #lightgallery figure:nth-child(3) {
+      display: block;
+    }
+  }
 }
