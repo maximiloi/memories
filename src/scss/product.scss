@@ -4,9 +4,17 @@
   &__title {
     font-size: 1.8em;
     font-weight: 700;
+    margin-top: 1em;
   }
   &__wrapper {
     margin-top: 2em;
+    &--color {
+      display: flex;
+      justify-content: space-between;
+      & .product__list {
+        margin-top: 0;
+      }
+    }
   }
   &__img {
     width: 100%;
@@ -14,5 +22,62 @@
   &__list {
     margin-top: 2em;
     text-align: left;
+  }
+  &__text {
+    display: flex;
+    align-items: center;
+    & span {
+      font-weight: 700;
+      margin-right: 3px;
+    }
+    &:before {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 32px;
+      margin: 0 4px 0 0;
+    }
+    &.dimensions {
+      background: url("@img/product/dimensions.png") 0 0 / 32px 32px no-repeat;
+    }
+    &.sachet3 {
+      background: url("@img/product/sachet3.png") 0 0 / 32px 32px no-repeat;
+    }
+    &.sachet {
+      background: url("@img/product/sachet.png") 0 0 / 32px 32px no-repeat;
+    }
+    &.sponge {
+      background: url("@img/product/sponge.png") 0 0 / 32px 32px no-repeat;
+    }
+    &.box {
+      background: url("@img/product/box.png") 0 0 / 32px 32px no-repeat;
+    }
+  }
+  &__info:not(:last-child) {
+    margin-bottom: 0.5em;
+  }
+  &__color {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5em;
+    &:before {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 32px;
+      margin: 0 4px 0 0;
+    }
+    &.blue {
+      background: url("@img/product/blue.png") 0 0 / 32px 32px no-repeat;
+    }
+    &.pink {
+      background: url("@img/product/pink.png") 0 0 / 32px 32px no-repeat;
+    }
+    &.turquoise {
+      background: url("@img/product/turquoise.png") 0 0 / 32px 32px no-repeat;
+    }
+    &.lilac {
+      background: url("@img/product/lilac.png") 0 0 / 32px 32px no-repeat;
+    }
   }
 }
