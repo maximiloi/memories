@@ -23,6 +23,9 @@
     margin-top: 2em;
     text-align: left;
   }
+  &__item:last-child {
+    margin-top: 2em;
+  }
   &__text {
     display: flex;
     align-items: center;
@@ -52,6 +55,9 @@
     &.box {
       background: url("@img/product/box.png") 0 0 / 32px 32px no-repeat;
     }
+    &.feathers {
+      background: url("@img/product/feathers.png") 0 0 / 32px 32px no-repeat;
+    }
   }
   &__info:not(:last-child) {
     margin-bottom: 0.5em;
@@ -79,5 +85,51 @@
     &.lilac {
       background: url("@img/product/lilac.png") 0 0 / 32px 32px no-repeat;
     }
+  }
+
+  .fill {
+    color: #5b4695;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 13px 40px 13px;
+    outline: 0;
+    border: 1px solid black;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .fill.active {
+    color: #000000;
+  }
+
+  .fill.active:hover {
+    cursor: default;
+  }
+
+  .fill.active::after {
+    top: 0px;
+    left: 0px;
+  }
+
+  .fill:hover {
+    color: #000000;
+    cursor: pointer;
+  }
+
+  .fill::after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+
+  .fill:hover::after {
+    top: 0px;
+    left: 0px;
   }
 }

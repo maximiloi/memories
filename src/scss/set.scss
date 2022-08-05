@@ -1,6 +1,6 @@
 .set {
   &__picture {
-    margin-top: 5em;
+    margin-top: 3em;
     position: relative;
     & span {
       font-size: 1.5em;
@@ -27,7 +27,7 @@
       &:before {
         content: "";
         position: absolute;
-        top: -5px;
+        top: -3px;
         left: -9px;
         display: block;
         width: 1.2em;
