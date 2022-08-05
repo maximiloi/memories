@@ -1,0 +1,14 @@
+.certification {
+  text-align: center;
+  margin-top: 5em;
+  &__title {
+    font-size: 1.8em;
+    font-weight: 700;
+  }
+  &__text {
+    margin-top: 1em;
+  }
+  & #lightgallery figure img {
+    height: 150px;
+  }
+}
