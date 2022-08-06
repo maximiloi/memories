@@ -10,15 +10,15 @@ import lightGallery from 'lightgallery';
 
 // Плагины
 // lgZoom, lgAutoplay, lgComment, lgFullscreen, lgHash, lgPager, lgRotate, lgShare, lgThumbnail, lgVideo, lgMediumZoom
-// import lgThumbnail from 'lightgallery/plugins/thumbnail'
 
-// import lgThumbnail from 'lightgallery/plugins/thumbnail'
-// import lgZoom from 'lightgallery/plugins/zoom'
+// import lgThumbnail from 'lightgallery/plugins/thumbnail/lg-thumbnail.min.js';
+// import lgZoom from 'lightgallery/plugins/zoom/lg-zoom.min.js';
+// import lgPager from 'lightgallery/plugins/pager/lg-pager.min.js';
 
 // Базовые стили
 import '@scss/libs/gallery/lightgallery.scss';
 // Стили дополнений
-// import '@scss/libs/gallery/lg-thumbnail.scss';
+import '@scss/libs/gallery/lg-thumbnail.scss';
 // import '@scss/libs/gallery/lg-video.scss';
 // import '@scss/libs/gallery/lg-autoplay.scss';
 // import '@scss/libs/gallery/lg-zoom.scss';
@@ -34,15 +34,31 @@ import '@scss/libs/gallery/lightgallery.scss';
 // import '@scss/libs/gallery/lightgallery-bundle.scss';
 
 // Запуск
-const galleries = document.querySelectorAll('[data-gallery]');
-if (galleries.length) {
-	galleries.forEach(gallery => {
-		lightGallery(gallery, {
-			// plugins: [lgThumbnail],
-			// thumbnail: true,
-			licenseKey: '7EC452A9-0CFD441C-BD984C7C-17C8456E',
-			speed: 500,
-			mode: 'lg-fade',
-		});
-	});
-}
+// const galleries = document.querySelectorAll('[data-gallery]');
+// if (galleries.length) {
+// 	galleries.forEach(gallery => {
+// 		lightGallery(gallery, {
+// 			plugins: [lgThumbnail],
+// 			thumbnail: true,
+// 			licenseKey: '7EC452A9-0CFD441C-BD984C7C-17C8456E',
+// 			speed: 500,
+// 			mode: 'lg-fade',
+// 		});
+// 	});
+// }
+
+lightGallery(document.querySelector('#certification__gallery'), {
+	thumbnail: true,
+	licenseKey: '7EC452A9-0CFD441C-BD984C7C-17C8456E',
+	speed: 500,
+	mode: 'lg-fade',
+	selector: '.certification__full',
+});
+
+lightGallery(document.querySelector('#lightgallery'), {
+	thumbnail: true,
+	licenseKey: '7EC452A9-0CFD441C-BD984C7C-17C8456E',
+	speed: 500,
+	mode: 'lg-fade',
+	selector: '.lightgallery__full',
+});

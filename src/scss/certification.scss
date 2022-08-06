@@ -8,20 +8,20 @@
   &__text {
     margin-top: 1em;
   }
-  & #lightgallery figure img {
+  & #certification__gallery figure img {
     height: 150px;
   }
-  & #lightgallery figure:nth-child(3) {
+  & #certification__gallery figure:nth-child(3) {
     display: none;
   }
 }
 
 @media (min-width:$pc) {
   .certification {
-    & #lightgallery figure img {
+    & #certification__gallery figure img {
       height: 300px;
     }
-    & #lightgallery figure:nth-child(3) {
+    & #certification__gallery figure:nth-child(3) {
       display: block;
     }
   }
