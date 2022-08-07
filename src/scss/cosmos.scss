@@ -1,7 +1,16 @@
 .cosmos {
+  &__wrapper {
+    @media (min-width:$pc){
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
   &__belka,
   &__strelka {
     width: 10em;
+    @media (min-width:$pc){
+      width: 15em; 
+    }
   }
   &__belka {
     margin-top: 50px;
@@ -12,6 +21,11 @@
     margin-top: -30px;
     margin-left: -40px;
     animation: scalingStrelka 15s linear infinite;
+  }
+  &__inner {
+    @media (min-width:$pc){
+      width: 50%;
+    }
   }
   &__inner:first-child {
     display: flex;
@@ -24,9 +38,16 @@
   &__title {
     font-family: "LemonTuesday";
     font-size: 2em;
+    @media (min-width:$pc){
+      font-size: 2.8em;
+      margin-top: .5em;
+    }
   }
   &__tagline {
     margin-top: .8em;
+    @media (min-width:$pc){
+      font-size: 1.2em;
+    }
   }
 }
 

@@ -2,6 +2,10 @@
   &__picture {
     margin-top: 3em;
     position: relative;
+    @media (min-width:$pc){
+      max-width: 50%;
+      margin-top: -15em;
+    }
     & span {
       font-size: 1.5em;
       color: black;
@@ -42,6 +46,10 @@
   }
   &__list {
     margin-top: 2em;
+    @media (min-width:$pc){
+      display: flex;
+      justify-content: space-between;
+    }
   }
   &__item:not(:last-child) {
     margin-bottom: 1em;
