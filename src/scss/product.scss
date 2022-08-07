@@ -23,8 +23,11 @@
     height: auto;
   }
   &__list {
-    margin-top: 2em;
     text-align: left;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2em;
   }
   &__item:last-child {
     margin-top: 2em;
