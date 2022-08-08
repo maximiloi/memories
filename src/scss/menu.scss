@@ -20,7 +20,7 @@
     // background-color: transparent;
     // padding: rem(80) rem(0) rem(0) rem(100);
     z-index: 2;
-    transition: right 1.5s ease 0s;
+    transition: right 1s ease 0s;
     
     .menu-open & {
       right: -150px;
