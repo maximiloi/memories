@@ -1,0 +1,44 @@
+.idea {
+  margin-top: 5em;
+  &__title {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  &__wrapper {
+    @media (min-width:$pc){
+      display: flex;
+    }
+  }
+  &__slide {
+    line-height: 1.25;
+    height: rem(350);
+    @media (min-width:$pc){
+      height: rem(180); 
+    }
+  }
+  &__text {
+    margin-top: rem(10);
+  }
+  &__pagging {
+    display: flex;
+    justify-content: center;
+    // margin-top: rem(10);
+    gap: rem(10);
+    & .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      background-color: #000;
+      border-radius: 50%;
+      // border: 1px solid #000;
+      &-active {
+        opacity: .3;
+      }
+    }
+  }
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation, Pagination, Autoplay, Parallax } from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -49,59 +49,45 @@ function initSliders() {
 		new Swiper('.swiper', {
 			// Подключаем модули слайдера
 			// для конкретного случая
-			//modules: [Navigation, Pagination],
-			/*
+			modules: [Navigation, Pagination, Autoplay, Parallax],
 			effect: 'fade',
 			autoplay: {
-				delay: 3000,
+				delay: 10000,
 				disableOnInteraction: false,
 			},
-			*/
+			parallax: true,
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
 			spaceBetween: 0,
 			autoHeight: true,
-			speed: 800,
+			speed: 1000,
 			//touchRatio: 0,
 			//simulateTouch: false,
-			//loop: true,
+			loop: true,
 			//preloadImages: false,
 			//lazy: true,
 			// Dotts
-			//pagination: {
-			//	el: '.slider-quality__pagging',
-			//	clickable: true,
-			//},
+			pagination: {
+				el: '.idea__pagging',
+				clickable: true,
+				type: 'bullets',
+			},
 			// Arrows
 			navigation: {
-				nextEl: '.about__more .more__item_next',
-				prevEl: '.about__more .more__item_prev',
+				nextEl: '.idea__button-next',
+				prevEl: '.idea__button-prev',
 			},
-			/*
 			breakpoints: {
 				320: {
 					slidesPerView: 1,
 					spaceBetween: 0,
 					autoHeight: true,
 				},
-				768: {
-					slidesPerView: 2,
-					spaceBetween: 20,
-				},
-				992: {
-					slidesPerView: 3,
-					spaceBetween: 20,
-				},
-				1268: {
-					slidesPerView: 4,
-					spaceBetween: 30,
-				},
 			},
-			*/
-			on: {
+			// on: {
 
-			}
+			// }
 		});
 	}
 }
