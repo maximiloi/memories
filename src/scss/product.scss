@@ -30,7 +30,7 @@
     margin-top: 2em;
   }
   &__item:last-child {
-    margin-top: 2em;
+    margin-top: 1.5em;
   }
   &__text {
     display: flex;
@@ -90,6 +90,10 @@
     }
     &.lilac {
       background: url("@img/product/lilac.png") 0 0 / 32px 32px no-repeat;
+    }
+    &.art {
+      text-transform: uppercase;
+      font-size: .6em;
     }
   }
 
