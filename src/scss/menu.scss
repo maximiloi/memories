@@ -1,18 +1,19 @@
 .menu {
   &__moon {
-    width: 400px;
-    height: 400px;
-    background: url(@img/moon.svg) 0 0 / 400px 400px no-repeat;
+    width: 80vh;
+    height: 80vh;
+    background: url(@img/planet.svg) 0 0 / 80vh 80vh no-repeat;
     animation: 90s linear 0s normal none infinite running rot;
     overflow: hidden;
   }
   &__body {
     color: #000;
+    font-size: larger;
     position: fixed;
-    width: 400px;
-    height: 400px;
+    width: 80vh;
+    height: 80vh;
     border-radius: 50%;
-    top: rem(65);
+    top: rem(35);
     right: -200%; 
     // right: -100px;
     // overflow: auto;
@@ -28,8 +29,8 @@
   }
   &__list {
     position: absolute;
-    top: rem(100);
-    left: rem(90);
+    top: 25vh;
+    left: 15vh;
   }
   &__item {
     margin-top: rem(10);

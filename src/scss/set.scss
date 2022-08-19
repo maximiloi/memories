@@ -7,16 +7,29 @@
       margin-top: -15em;
     }
     & span {
-      font-size: 1.5em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // display: block;
+      // position: relative;
       color: black;
-      position: relative;
+      width: 2em;
+      height: 2em;
+      border: 2px solid black;
+      border-radius: 1em;
+      &:before {
+        content: attr(data-value);
+        // position: absolute;
+        // display: inline;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        font-size: 1.4em;
+      }
       &:nth-child(1) {
         position: absolute;
         top: 20%;
         left: 12%;
-        &:before {
-          left: -11px;
-        }
       }
       &:nth-child(2) {
         position: absolute;
@@ -27,17 +40,6 @@
         position: absolute;
         top: 51%;
         left: 87%;
-      }
-      &:before {
-        content: "";
-        position: absolute;
-        top: -3px;
-        left: -9px;
-        display: block;
-        width: 1.2em;
-        height: 1.2em;
-        border: 2px solid black;
-        border-radius: .6em;
       }
     } 
   }
