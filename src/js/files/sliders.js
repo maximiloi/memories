@@ -45,7 +45,7 @@ function initSliders() {
 	bildSliders();
 
 	// Перечень слайдеров
-	if (document.querySelector('.swiper')) {
+	if (document.querySelector('.idea__wrapper')) {
 		new Swiper('.swiper', {
 			// Подключаем модули слайдера
 			// для конкретного случая
@@ -78,18 +78,65 @@ function initSliders() {
 				nextEl: '.idea__button-next',
 				prevEl: '.idea__button-prev',
 			},
-			breakpoints: {
-				320: {
-					slidesPerView: 1,
-					spaceBetween: 0,
-					autoHeight: true,
-				},
-			},
+			// breakpoints: {
+			// 	320: {
+			// 		slidesPerView: 3,
+			// 		spaceBetween: 0,
+			// 		autoHeight: true,
+			// 	},
+			// },
 			// on: {
+			// },
 
-			// }
 		});
-	}
+	};
+
+	// Настройки слайдера с фото продуктов
+	// Перечень слайдеров
+	// if (document.querySelector('.gallery__product')) {
+	// 	new Swiper('.swiper2', {
+	// 		// Подключаем модули слайдера
+	// 		// для конкретного случая
+	// 		modules: [Navigation, Pagination, Autoplay, Parallax],
+	// 		effect: 'fade',
+	// 		autoplay: {
+	// 			delay: 1000,
+	// 			disableOnInteraction: false,
+	// 		},
+	// 		centeredSlides: true,
+	// 		parallax: true,
+	// 		observer: true,
+	// 		observeParents: true,
+	// 		slidesPerView: 4,
+	// 		spaceBetween: 30,
+	// 		autoHeight: true,
+	// 		speed: 1000,
+	// 		//touchRatio: 0,
+	// 		//simulateTouch: false,
+	// 		loop: true,
+	// 		//preloadImages: false,
+	// 		//lazy: true,
+	// 		// Dotts
+	// 		pagination: {
+	// 			el: '.gallery__product--pagging',
+	// 			clickable: true,
+	// 			type: 'bullets',
+	// 		},
+	// 		// Arrows
+	// 		// navigation: {
+	// 		// 	nextEl: '.idea__button-next',
+	// 		// 	prevEl: '.idea__button-prev',
+	// 		// },
+	// 		// breakpoints: {
+	// 		// 	320: {
+	// 		// 		slidesPerView: 4,
+	// 		// 		spaceBetween: 0,
+	// 		// 		autoHeight: true,
+	// 		// 	},
+	// 		// },
+	// 	});
+	// };
+
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
 function initSlidersScroll() {

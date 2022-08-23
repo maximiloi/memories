@@ -62,3 +62,11 @@ lightGallery(document.querySelector('#lightgallery'), {
 	mode: 'lg-fade',
 	selector: '.lightgallery__full',
 });
+
+lightGallery(document.querySelector('#gallery__product'), {
+	thumbnail: true,
+	licenseKey: '7EC452A9-0CFD441C-BD984C7C-17C8456E',
+	speed: 500,
+	mode: 'lg-fade',
+	selector: '.lightgallery__full',
+});

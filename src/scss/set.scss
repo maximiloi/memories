@@ -1,4 +1,10 @@
 .set {
+  &__wrapper {
+    @media (min-width:$tablet){
+      display: flex;
+      justify-content: space-around;
+    }
+  }
   &__picture {
     margin-top: 3em;
     position: relative;
@@ -27,33 +33,39 @@
         font-size: 1.4em;
       }
       &:nth-child(1) {
+        color: #fff;
+        border: 2px solid #fff;
         position: absolute;
-        top: 20%;
-        left: 12%;
+        top: 30%;
+        left: 10%;
       }
       &:nth-child(2) {
         position: absolute;
         top: 87%;
-        left: 20%;
+        left: 10%;
       }
       &:nth-child(3) {
         position: absolute;
-        top: 51%;
-        left: 87%;
+        top: 65%;
+        left: 88%;
       }
     } 
   }
   &__img {
     width: 100%;
+    @media (min-width:$tablet){
+      display: block;
+      margin: 0 auto;
+      max-width: rem(450);
+    }
   }
   &__list {
     margin-top: 2em;
-    @media (min-width:$pc){
-      display: flex;
-      justify-content: space-between;
-    }
   }
   &__item:not(:last-child) {
     margin-bottom: 1em;
+    @media (min-width:$tablet) {
+      margin-bottom: 1.5em;
+    }
   }
 }
